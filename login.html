@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | LostLink</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <section class="login-section">
+        <div class="login-box">
+            <h2 class="login-title">Welcome to LostLink</h2>
+            <form id="loginForm" class="login-form">
+                <div class="input-group">
+                    <label for="username"><i class="fa-solid fa-user"></i> Username</label>
+                    <input type="text" id="username" name="username" required autocomplete="username">
+                </div>
+                <div class="input-group">
+                    <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+                    <input type="password" id="password" name="password" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <div id="loginError" class="login-error" style="display:none;">Invalid username or password.</div>
+            </form>
+        </div>
+    </section>
+    <script src="js/login.js"></script>
+</body>
+</html>

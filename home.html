@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="shortcut icon" href="/images/FAVICON.jpeg">
+    <title>Home</title>
+    
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="login.html" class="logout-btn">LOG OUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h2 class="welcome-message">Welcome Austin</h2>
+            <div class="search-container">
+                <input type="text" placeholder="Search items..." class="search-input" id="searchInput">
+                <select class="category-select" id="categorySelect">
+                    <option value="">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="documents">Documents</option>
+                    <option value="other">Other</option>
+                </select>
+                <button class="search-btn" id="searchBtn">Search</button>
+            </div>
+            <div class="lost-found-header">
+                <h2>Lost & Found Items</h2>
+                <p class="lost-found-sub">Find what you've lost and browse through the lost items.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lost Items Section -->
+    <section class="items-section">
+        <div class="container">
+            <h2>Lost Items</h2>
+            <div class="items-grid">
+                <!-- Card 1 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/calculator.png" alt="Calculator">
+                        <span class="status">Lost</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Calculator</h3>
+                        <div class="category"><i class="fa-solid fa-microchip"></i> Electronics</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Library</div>
+                        <div class="date"><i class="fa-solid fa-calendar"></i> June 10, 2025</div>
+                        <div class="description">A black scientific calculator, last seen in the library study area.</div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/charger.png" alt="Charger">
+                        <span class="status">Lost</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Phone Charger</h3>
+                        <div class="category"><i class="fa-solid fa-bolt"></i> Electronics</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Cafeteria</div>
+                        <div class="date"><i class="fa-solid fa-calendar"></i> June 12, 2025</div>
+                        <div class="description">White USB-C charger, left on a cafeteria table.</div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/headphones.png" alt="Headphones">
+                        <span class="status">Lost</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Headphones</h3>
+                        <div class="category"><i class="fa-solid fa-headphones"></i> Accessories</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Gym</div>
+                        <div class="date"><i class="fa-solid fa-calendar"></i> June 15, 2025</div>
+                        <div class="description">Black wireless headphones, lost in the gym locker room.</div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/jacket.png" alt="Jacket">
+                        <span class="status">Lost</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Jacket</h3>
+                        <div class="category"><i class="fa-solid fa-shirt"></i> Clothing</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Auditorium</div>
+                        <div class="date"><i class="fa-solid fa-calendar"></i> June 8, 2025</div>
+                        <div class="description">Blue denim jacket, left on a seat in the auditorium.</div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/laptop.png" alt="Laptop">
+                        <span class="status">Lost</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Laptop</h3>
+                        <div class="category"><i class="fa-solid fa-laptop"></i> Electronics</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Computer Lab</div>
+                        <div class="date"><i class="fa-solid fa-calendar"></i> June 5, 2025</div>
+                        <div class="description">Silver HP laptop, lost in the computer lab.</div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/notebook.png" alt="Notebook">
+                        <span class="status">Lost</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Notebook</h3>
+                        <div class="category"><i class="fa-solid fa-book"></i> Documents</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Lecture Hall</div>
+                        <div class="date"><i class="fa-solid fa-calendar"></i> June 14, 2025</div>
+                        <div class="description">Red spiral notebook with math notes, left in lecture hall.</div>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/umbrella.png" alt="Umbrella">
+                        <span class="status">Lost</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Umbrella</h3>
+                        <div class="category"><i class="fa-solid fa-umbrella"></i> Accessories</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Main Entrance</div>
+                        <div class="date"><i class="fa-solid fa-calendar"></i> June 13, 2025</div>
+                        <div class="description">Black foldable umbrella, left near the main entrance.</div>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/usb.png" alt="USB Drive">
+                        <span class="status">Lost</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>USB Drive</h3>
+                        <div class="category"><i class="fa-solid fa-usb"></i> Electronics</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Library</div>
+                        <div class="date"><i class="fa-solid fa-calendar"></i> June 11, 2025</div>
+                        <div class="description">16GB black USB drive, last seen in the library.</div>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/waterbottle.png" alt="Water Bottle">
+                        <span class="status">Lost</span>
+                    </div>
+                    <div class="item-info">
+                        <h3>Water Bottle</h3>
+                        <div class="category"><i class="fa-solid fa-bottle-water"></i> Accessories</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i> Sports Field</div>
+                        <div class="date"><i class="fa-solid fa-calendar"></i> June 9, 2025</div>
+                        <div class="description">Blue water bottle, left on the sports field bench.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+        <footer class="footer">
+            <div class="container">
+                <h1 style="font-size: 30px;color: lavender;">LoFo</h1>
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Our Services</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Our Services</a></li>
+                            <li><a href="">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li><a href=""><p><i class="fa-solid fa-phone"></i> +254768384787</p></a></li>
+                            <li><a href=""><p><i class="fa-solid fa-envelope"></i> info@quantum.com</p></a></li>
+                            <li><a href=""><p><i class="fa fa-map-marker"></i> 5th Street, Westlands, Nairobi</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2025 LOFO. All rights reserved</p>
+        </footer>
+    </section>
+    <!-- The script is placed at the end of the body to ensure all HTML elements are loaded before the JavaScript runs. This prevents errors when accessing DOM elements and is a best practice for client-side scripts. -->
+    <script src="js/home.js"></script>
+</body>
+</html>

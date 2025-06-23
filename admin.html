@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <section class="header">
+        <div class="text-box">
+            <h2 class="welcome-message">Admin Dashboard</h2>
+        </div>
+    </section>
+    <div class="admin-nav-btns">
+        <a href="admin.html" class="admin-btn">Dashboard</a>
+        <a href="home.html" class="admin-btn">User View</a>
+        <a href="login.html" class="admin-btn logout-btn">Log Out</a>
+    </div>
+    <section class="admin-content">
+        <div class="dashboard-stats">
+            <div class="stat-card total-items">
+                <div class="stat-icon"><i class="fa-solid fa-box-archive"></i></div>
+                <div class="stat-label">Total Items</div>
+                <div class="stat-value" id="statTotal">0</div>
+            </div>
+            <div class="stat-card verified-items">
+                <div class="stat-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="stat-label">Verified</div>
+                <div class="stat-value" id="statVerified">0</div>
+            </div>
+            <div class="stat-card claimed-items">
+                <div class="stat-icon"><i class="fa-solid fa-user-check"></i></div>
+                <div class="stat-label">Claimed</div>
+                <div class="stat-value" id="statClaimed">0</div>
+            </div>
+        </div>
+        <h2>Manage Lost Items</h2>
+        <button id="addItemBtn">Add New Lost Item</button>
+        <div id="itemsList">
+            <!-- Admin will see a list of items here (to edit/delete/mark as found) -->
+        </div>
+        <div id="addItemForm" style="display:none;">
+            <h3>Add Lost Item</h3>
+            <form>
+                <label>Item Name: <input type="text" id="itemName"></label><br>
+                <label>Category: <input type="text" id="itemCategory"></label><br>
+                <label>Location: <input type="text" id="itemLocation"></label><br>
+                <label>Date Lost: <input type="date" id="itemDate"></label><br>
+                <label>Description: <textarea id="itemDescription"></textarea></label><br>
+                <label>Image: <input type="file" id="itemImage"></label><br>
+                <button type="button" id="saveItemBtn">Save Item</button>
+                <button type="button" id="cancelItemBtn">Cancel</button>
+            </form>
+        </div>
+    </section>
+    <section class="footer">
+        <footer class="footer">
+            <div class="container">
+                <h1 style="font-size: 30px;color: lavender;">LoFo</h1>
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Our Services</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Our Services</a></li>
+                            <li><a href="">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li><a href=""><p><i class="fa-solid fa-phone"></i> +254768384787</p></a></li>
+                            <li><a href=""><p><i class="fa-solid fa-envelope"></i> info@quantum.com</p></a></li>
+                            <li><a href=""><p><i class="fa fa-map-marker"></i> 5th Street, Westlands, Nairobi</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2025 LOFO. All rights reserved</p>
+        </footer>
+    </section>
+    <script src="js/admin.js"></script>
+</body>
+</html>
